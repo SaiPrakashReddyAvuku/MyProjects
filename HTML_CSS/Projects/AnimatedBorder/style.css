@@ -23,6 +23,7 @@
     padding: 20px;
     
 }
+/* property will enables you to customize your properties(here --angle), I used property because Normal CSS variables are not directly used to animate or to transition properties so customization is only way to make work the animated variables, and also here inherits False means we are not allowing inheriting its value from other blocks , like restricting it  inheriting from parent to child , here --angle will works and inherit its value from only animation block, */ 
 @property --angle{
     syntax:"<angle>";
     initial-value: 0deg;
@@ -30,13 +31,12 @@
 }
 .card::after,.card::before{
     /* --angle:0; */
-    animation: 30s new linear infinite;
+    animation: 5s new linear infinite;
     position: absolute;
     content:"";
     top:50%;
     left:50%;
     translate: -50% -50%;
-    /* transform: translate(100px,300px); */
     height: 100%;
     background-image:conic-gradient(from var(--angle),transparent 70%,red,yellow,green,blue,violet);
     width:100%;
