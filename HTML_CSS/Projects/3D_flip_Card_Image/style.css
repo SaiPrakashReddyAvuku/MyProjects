@@ -35,10 +35,16 @@
 .box{
     position:relative;
     z-index: 1;
-    transition: 0.6s;
+    transition: 1s;
     transform-style: preserve-3d;
 }
 .box:hover{
+    /* .backCard{
+       z-index: 1;
+    }
+    .frontCard{
+        opacity: 0;
+    } */
     transform:rotateY(180deg);
 }
 .frontCard,.backCard{
@@ -92,6 +98,8 @@ h6{
 }
 .backCard{
     backface-visibility: hidden;
+   /* display: none; */
+   /* z-index: -1; */
     position: absolute;
     top:0;
     border: none;
