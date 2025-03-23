@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 350px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 25px;
+    background-image: url(./images/bg.png);
+    color: white;
+}
+.logoSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 45px;
+}
+#chip{
+    width: 55px;
+}
+#master{
+    font-size: 16px;
+    margin-left: -100px;
+}
+.detailSection{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#User{
+    margin-top: 10px;
+}
+#Number{
+    margin-top: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
